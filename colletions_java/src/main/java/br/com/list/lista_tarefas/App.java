@@ -9,9 +9,6 @@ public class App {
         listTask.add(new Task("Remover o lixo", false));
         listTask.add(new Task("Ir a academia", false));
 
-        listTask.completeTask(new Task("Remover o lixo", false));
-        listTask.getTasksCompleted();
-        System.out.println("----------------------------");
-        listTask.getTasksNotCompleted();
+        listTask.getAllTasks();
     }
 }

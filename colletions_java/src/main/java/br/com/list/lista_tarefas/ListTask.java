@@ -26,13 +26,11 @@ public class ListTask {
         return this.list.size();
     }
     
-    public void getDescriptionTasks() {
-        this.list.forEach(task -> {
-            System.out.println(task.description());
-        });
+    public void getAllTasks() {
+        this.getAllTasks(this.list);
     }
     
-    private void getDescriptionTasks(List<Task> list) {
+    private void getAllTasks(List<Task> list) {
         list.forEach(task -> {
             System.out.println(task.description());
         });
@@ -49,11 +47,11 @@ public class ListTask {
     }
     
     public void getTasksCompleted() {
-        this.getDescriptionTasks(this.getTasksByStatus(true));
+        this.getAllTasks(this.getTasksByStatus(true));
     }
     
     public void getTasksNotCompleted() {
-        this.getDescriptionTasks(this.getTasksByStatus(false));
+        this.getAllTasks(this.getTasksByStatus(false));
     }
     
     public int getIndexTask(Task task) {
