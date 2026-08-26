@@ -23,7 +23,6 @@ public class ListProduct {
             public int compare(Product p1, Product p2) {
                 return p1.name().compareToIgnoreCase(p2.name());
             }
-        
         });
         
         filteredList.addAll(this.list);
